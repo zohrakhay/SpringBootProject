@@ -7,10 +7,10 @@ pipeline {
     }
     stages {
         stage("init") {
-             environment {
+           /*  environment {
                   CI = 'true'
                   scannerHome = tool 'devops'
-            }
+            }*/
             steps {
                 script {
                     gv = load "script.groovy"
